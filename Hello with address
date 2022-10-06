@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	char n[20],a[30],c[15];
+	printf("Enter your Name: ");
+	scanf("%s",&n);
+	printf("Enter your Address: ");
+	scanf("%s",&a);
+	printf("Enter your City: ");
+	scanf("%s",&c);
+	printf("Hello %s %s\n",n,a);
+	printf("%s",c);
+	return 0;
+}
