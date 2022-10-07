@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	float a,b,add,diff,multi,division,modulus;
+	printf("Enter the first no.:: ");
+	scanf("%f",&a);
+	printf("Enter the second no:: ");
+	scanf("%f",&b);
+	add=a+b;
+	diff=a-b;
+	multi=a*b;
+	division=a/b;
+//	modulus=a%b;
+	printf("the additon is:: %.2f\n",add);
+	printf("the difference is:: %.2f\n",diff);
+	printf("the multipilication is:: %.2f\n",multi);
+	printf("the division is:: %.2f\n",division);
+	printf("the modulus is:: %.2f\n",modulus);
+	
+	return 0;
+}
