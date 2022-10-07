@@ -1,0 +1,17 @@
+//https://github.com/rathoursuryanshu10/C-Programmings/tree/main
+#include<stdio.h>
+int main()
+{
+	int n,i,j;
+	printf("Entet the no of coloumn:: ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("*");	
+		}
+		printf("\n");
+	}
+	return 0;
+}
