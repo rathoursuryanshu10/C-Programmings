@@ -1,0 +1,56 @@
+#include<stdio.h>
+int main()
+{
+	int p,c,m,h,e,t;
+	float per,mm;
+	char name[20],r[10];
+	printf("Enter your name: ");
+	fgets(name,sizeof(name),stdin);
+	printf("Enter the roll no: ");
+	scanf("%s",&r);
+	printf("input the marks of Physics: ");
+	scanf("%d",&p);
+	printf("input the marks of Chemistry: ");
+	scanf("%d",&c);
+	printf("input the marks of Mathematics: ");
+	scanf("%d",&m);
+	printf("input the marks of Hindi: ");
+	scanf("%d",&h);
+	printf("input the marks of English: ");
+	scanf("%d",&e);
+	printf("Input the maximum marks: ");
+	scanf("%f",&mm);
+	puts(name);
+	printf("Roll no: %s\n",r);
+	printf("-----------------------------------------------------------------\n");
+	printf("S.No.			Subjects			Marks\n");
+	printf("-----------------------------------------------------------------\n");
+	printf("1.			Physics				%d\n",p);
+	printf("2.			Chemistry			%d\n",c);
+	printf("3.			Mathematics			%d\n",m);
+	printf("4.			Hindi 				%d\n",h);
+	printf("5.			English				%d\n",e);
+	printf("-----------------------------------------------------------------\n");
+	t=p+c+m+h+e;
+	printf("Total obtained Marks = %d\n",t);
+	per =(t*100)/mm;
+	printf("Percentage = %.2f\n",per);
+	if(p>40 && m>40 && c>40 && e>40 && h>40)
+	{
+		if(per >=80)
+		printf(" RESULT = %.2f Honors \t",per);
+		else if(per >=60 && per <80)
+		printf("RESULT = PASS First devision");
+		else if(per>=50 && per <60)
+		printf("RESULT = PASS Second devision" );
+		else if(per>=40 && per<50)
+		printf("RESULT = PASS Third devision");
+		else
+		printf("FAIL "); 
+	}
+	else
+	{
+		printf("RESULT = FAIL ");
+	}
+	return 0;
+}
